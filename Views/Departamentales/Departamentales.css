@@ -1,4 +1,21 @@
-body {background-color: black;}
+body {
+    background-color: black;
+}
 .nombre {
     color:yellow;
+}
+.imag {
+    position:absolute;
+    height: auto;
+    width: 25px;
+    margin: 10px;
+    top: 0;
+    right:0;
+}
+.inicio_sesion {
+    position: absolute;
+    height: auto;
+    right: 0;
+    top:0;
+    margin: 10px;
 }
