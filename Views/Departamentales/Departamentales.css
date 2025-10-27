@@ -1,5 +1,4 @@
-.narva {
-    background-color: yellow;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 50px;
+body {background-color: black;}
+.nombre {
+    color:yellow;
 }
