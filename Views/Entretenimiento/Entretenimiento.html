@@ -1,69 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="icono.jpg" type="image/jpeg">
-    <title>Reseñas Que Reseñan</title>
-    <style>
-        body {
-            background-color: black;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: yellow;
-        }
-        .top-left {
-            margin: 20px;
-        }
-        .buscador {
-            display: inline-flex;
-            margin-top: 5px;
-        }
-        .buscador input {
-            padding: 8px;
-            border-radius: 25px 0 0 25px;
-            border: 1px solid #ccc;
-            width: 200px;
-            outline: none;
-        }
-        .buscador button {
-            padding: 8px 12px;
-            border-radius: 0 25px 25px 0;
-            border: none;
-            background-color: gray;
-            color: white;
-            cursor: pointer;
-        }
-        .buscador button:hover {
-            background-color: gray;
-        }
-        .cuadro {
-            background-color: white;
-            width: 70%;
-            height: 70vh;
-            margin: 50px auto;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0,0,0,0.5);
-            border: 5px solid yellow;
-        }
-        .cuadro img {
-            display: block;
-            margin: 0 auto;
-            border-radius: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reseñas Que Reseñan</title>
+  <link rel="stylesheet" href="Entretenimiento.css">
 </head>
-<body> 
-    <div class="top-left">
-        <h1>Reseñas Que Reseñan</h1>
-        <div class="buscador">
-            <input type="text" placeholder="Busca aquí...">
-            <button>🔍</button>
-        </div>
+<body>
+  <header>
+    <h1>Reseñas Que Reseñan</h1>
+    <div class="navbar">
+        
+      <input type="text" list="Entretenimiento" placeholder="Buscar establecimiento...">
+      <datalist id="Entretenimiento">
+        <option value="Cinepolis">
+        <option value="Karaoke y Centros de Música">
+        <option value="Bowling y Boliches">
+        <option value="Teatros y Espectáculos en Vivo">
+        <option value="Parques y Áreas Recreativas">
+      </datalist>
+      <button>INICIAR SESIÓN</button>
     </div>
+  </header>
 
-    <div class="cuadro">
-       
-    </div>
+  <main>
+    <section class="Entretenimiento-card destacado">
+      <img src="https://thebrandinquirer.wordpress.com/wp-content/uploads/2019/07/1-cinepolis-nuevo-redisencc83o-new-logo-redesign-2019-brand-my-f-opinion-1.png" alt="Cinepolis">
+      <div class="info">
+        <h2>Cinepolis</h2>
+        <div class="stars">★★★★☆</div>
+        <p>Diversión y entretenimiento en cada función. Este lugar es famoso por su experiencia cinematográfica de calidad, sus salas cómodas y modernas, la variedad de películas y snacks que ofrece, y el ambiente ideal para disfrutar de una salida casual con amigos o familia frente a la magia del cine."</p>
+        <p><strong>Horario:</strong> Lunes a domingo de 12:00 PM a 12:00 AM.</p>
+      </div>
+    </section>
+
+
+    <section class="Entretenimiento-list">
+      <div class="Entretenimiento-card">
+        <img src="https://img.freepik.com/vector-premium/musica-karaoke-diseno-elementos-brillantes-luz-neon_454824-125.jpg?w=360" alt="Karaoke y Centros de Música">
+        <div class="info">
+          <h2>Karaoke y Centros de Música</h2>
+          <div class="stars">★★★★☆</div>
+        </div>
+      </div>
+
+      <div class="Entretenimiento-card">
+        <img src="https://media.istockphoto.com/id/904275376/pt/vetorial/bowling-is-a-neon-sign-symbol-emblem-neon-style-luminous-advertising-banner-night-bright.jpg?s=612x612&w=0&k=20&c=8EvESMqPwlQJRzWifvqxIUnCjpwA-6Rb8qhpKJbToP8=" alt="Bowling y Boliches">
+        <div class="info">
+          <h2>Bowling y Boliches</h2>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="Entretenimiento-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUbAS0_cJ-1eBhtuUfWskY7s6TQrsrlJFPOYf0IWumSRmXe394gmv4WxoTs6S9bDpmfkQ&usqp=CAU" alt="Teatros y Espectáculos en Vivo">
+        <div class="info">
+          <h2>Teatros y Espectáculos en Vivo</h2>
+          <div class="stars">★★★☆☆</div>
+        </div>
+      </div>
+
+      <div class="Entretenimiento-card">
+        <img src="https://img.freepik.com/vector-premium/logotipo-parque-diversiones_10250-1105.jpg" alt="Parques y Áreas Recreativas">
+        <div class="info">
+          <h2>Parques y Áreas Recreativas</h2>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
+
